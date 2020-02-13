@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Frases_do_dia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="yjw-AI-RdX">
+                                <rect key="frame" x="67" y="53" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="7d5-AE-fBw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aspas-esquerda.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zsn-a6-ceP">
+                                <rect key="frame" x="8" y="221" width="96" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="UYn-pS-vga"/>
+                                    <constraint firstAttribute="width" constant="96" id="sgG-dh-ypv"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aspas-direita.png" translatesAutoresizingMaskIntoConstraints="NO" id="RVC-R9-jQL">
+                                <rect key="frame" x="263" y="433.5" width="96" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="Dib-zL-xVY"/>
+                                    <constraint firstAttribute="height" constant="55" id="vgh-Th-sKq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXu-2K-0lz">
+                                <rect key="frame" x="6" y="283" width="361" height="142.5"/>
+                                <string key="text">Eu admiro aqueles que conseguem sorrir com os problemas, reunir forças na angústia, e ganhar coragem na reflexão. É coisa de pequenas mentes encolher-se, mas aquele cujo coração é firme, e cuja consciência aprova sua conduta, perseguirá seus princípios até à morte.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOz-ez-HXF">
+                                <rect key="frame" x="67" y="569" width="240" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2n3-2w-9yY"/>
+                                </constraints>
+                                <state key="normal" title="Nova frase"/>
+                                <connections>
+                                    <action selector="createNewPhraseAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xxP-gm-LVJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.96009041490000002" blue="0.95668690469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oXu-2K-0lz" firstAttribute="top" secondItem="Zsn-a6-ceP" secondAttribute="bottom" constant="8" id="0CK-zB-jaP"/>
+                            <constraint firstItem="yjw-AI-RdX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="0eW-Ih-s8Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YOz-ez-HXF" secondAttribute="trailing" constant="68" id="7NV-xH-PY5"/>
+                            <constraint firstAttribute="trailing" secondItem="oXu-2K-0lz" secondAttribute="trailing" constant="8" id="D11-Q0-PMh"/>
+                            <constraint firstItem="Zsn-a6-ceP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="EcH-VA-aYk"/>
+                            <constraint firstItem="RVC-R9-jQL" firstAttribute="top" secondItem="oXu-2K-0lz" secondAttribute="bottom" constant="8" id="NkD-OU-2rH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YOz-ez-HXF" secondAttribute="bottom" constant="68" id="QVq-nT-zr3"/>
+                            <constraint firstItem="YOz-ez-HXF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="Rqz-d7-eX2"/>
+                            <constraint firstItem="oXu-2K-0lz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="6" id="Tdf-jt-trn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yjw-AI-RdX" secondAttribute="trailing" constant="68" id="WSt-nu-JGF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RVC-R9-jQL" secondAttribute="trailing" constant="16" id="Wjw-iP-l1Y"/>
+                            <constraint firstItem="yjw-AI-RdX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="izz-g2-hjV"/>
+                            <constraint firstItem="Zsn-a6-ceP" firstAttribute="top" secondItem="yjw-AI-RdX" secondAttribute="bottom" constant="40" id="qZV-dE-BV4"/>
+                            <constraint firstItem="YOz-ez-HXF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="RVC-R9-jQL" secondAttribute="bottom" constant="8" id="spJ-tI-i6K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="legendaFrases" destination="oXu-2K-0lz" id="Uyd-W0-LPt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aspas-direita.png" width="56" height="55"/>
+        <image name="aspas-esquerda.png" width="57" height="54"/>
+        <image name="logo.png" width="253" height="140"/>
+    </resources>
+</document>
